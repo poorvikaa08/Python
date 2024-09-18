@@ -8,21 +8,24 @@ logo = '''
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
             
+print(logo)
+
 
 def caesar(choice, message, shift):
     if choice == "decode":
         shift *= -1
-    output = ""
+    output = ""        
+
     for letter in message:
-        shifted_index = alphabet.index(letter) + shift
-        shifted_index %= len(alphabet)
-        output += alphabet[shifted_index]
-    
-    
+        if letter not in alphabet:
+            output += letter
+        else:   
+            shifted_index = alphabet.index(letter) + shift
+            shifted_index %= len(alphabet)
+            output += alphabet[shifted_index]
+
     print(f"Your {choice}d message : {output}")
             
-     
-print(logo)
 
 
 should_continue = True
@@ -40,6 +43,7 @@ while should_continue:
         print("Thank you!!")
         
 
+# For encryptuing and decrypting seperately
 
 '''
 def caesar(choice, message, shift):
