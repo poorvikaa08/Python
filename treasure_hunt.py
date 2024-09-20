@@ -8,6 +8,7 @@ print('''
  ▀▀  .▀  ▀ ▀▀▀  ▀  ▀  ▀▀▀▀  ▀▀▀ .▀  ▀ ▀▀▀     ▀▀▀ · ▀▀▀ ▀▀ █▪ ▀▀▀     
 ''')
 
+
 print("\n\nWelcome to Treasure Hunt.")
 print("Your mission is to find the treasure.")
 
