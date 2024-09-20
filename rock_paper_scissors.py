@@ -1,35 +1,8 @@
 import random
-
+import art
 print("ROCK - PAPER - SCISSORS")
 
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
-
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-
-game_images = [rock, paper, scissors]
+game_images = [art.rock, art.paper, art.scissors]
 
 player_choice = int(input("What do you choose? Rock, paper or scissors?\nType 0 for rock, 1 for paper and 2 for scissors:  "))
 print(game_images[player_choice])
